@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Tugas - 054</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f4f6f9; }
+        .container-box { max-width: 550px; margin-top: 50px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container container-box">
+        <h3 class="text-center mb-4 text-primary">Pengumpulan Tugas Praktikum</h3>
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label fw-bold">NIM Mahasiswa</label>
+                <input type="text" name="nim" class="form-control" placeholder="Masukkan NIM Anda" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nama Lengkap</label>
+                <input type="text" name="name" class="form-control" placeholder="Masukkan Nama Lengkap" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Kelas</label>
+                <input type="text" name="class" class="form-control" placeholder="Contoh: TRPL-2A" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">Mata Kuliah</label>
+                <input type="text" name="course" class="form-control" placeholder="Mata Kuliah Praktikum" required>
+            </div>
+            <div class="mb-4">
+                <label class="form-label fw-bold">File Tugas</label>
+                <input type="file" name="taskFile" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2">Kirim Sekarang</button>
+            <div class="text-center mt-3">
+                <small class="text-muted">Managed by Azure Cloud Service 054</small>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
